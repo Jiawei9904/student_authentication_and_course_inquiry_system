@@ -146,7 +146,7 @@ int main(void){
                     continue;
                 }
             }
-            if(i == 5 && result.empty()){
+            if(i == 2000 && result.empty()){
                 cout << "Didn't find the course: " << courseCode << endl;
                 result = "No find";
             }else{
