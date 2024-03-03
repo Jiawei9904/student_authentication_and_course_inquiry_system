@@ -4,6 +4,18 @@
 
 This project has successfully built an entire **C++** "Web registration" system allowing for smooth operation. It comprises the development of a client, main server, credential server, and dedicated servers for EE and CS courses information handling (serverEE and serverCS).
 
+## System Functionality
+
+- TCP and UDP Protocols: Implements TCP for client-main server communication and UDP for server-server interactions, ensuring efficient data transfer. [Each Terminal Video Demo](https://youtu.be/JszrB2YVyvM)
+
+- Authentication Mechanism: Supports "username - password" authentication for secure access. `username:password` pairs are shown in `cred_unencrypted.txt`, but the input will be encrypted and `serverC` can **only** get access to `cred_encrypted.txt`. [Login Video Demo](https://youtu.be/yeSmR_of988)
+
+- Offline Mechanism: Incorporates an offline mechanism to handle excessive authentication attempts, enhancing security. [Offline Mechanism Video Demo](https://youtu.be/f8NFjCZjGo0)
+
+- Dynamic TCP Port: Features dynamic TCP port number allocation at the client terminal for flexibility and network conflict avoidance. [Dynamic TCP Port Check Video Demo](https://youtu.be/pE_iwc__8DA)
+
+- Course Inquiry: Allows "section number - request" based course inquiries post-authentication. [Search Result Video Demo](https://youtu.be/MbLwtngLTLY)
+
 ## System Components
 
 ### Client (`client.cpp`)
