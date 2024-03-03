@@ -1,0 +1,2 @@
+# student_authentication_and_course_inquiry_system
+Socket Programming: Student Authentication and Course Inquiry System
