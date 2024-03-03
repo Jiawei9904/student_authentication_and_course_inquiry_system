@@ -51,7 +51,14 @@ All messages exchanged within the system utilize a character array format, ensur
 
 ## System Idiosyncrasies
 
-The system operates without any peculiarities, maintaining a standard protocol for all processes. Notably, the TCP Bind Process in the main server may occasionally require up to a minute to respond, which is considered within normal operational parameters.
+The system maintaining a standard protocol for all processes. Notably, the TCP Bind Process in the main server may occasionally require up to a minute to respond, which is considered within normal operational parameters.
+
+Several important considerations need to be noted for optimal system operation:
+
+1. **Data Limitation in serverEE and serverCS:** Both `serverEE` and `serverCS` are currently configured to detect up to 2000 lines of data. Any data beyond 2000 lines may not be accurately detected.
+2. **Course Search Formatting:** When searching for courses, the input must be in the format of **"EE“+ digits or "CS” + digits** (e.g., EE123 or CS456), and it is case-sensitive.
+
+These idiosyncrasies highlight specific limitations and requirements within the system that users should be aware of to avoid potential issues.
 
 ## Code Reuse
 
